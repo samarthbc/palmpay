@@ -1,0 +1,28 @@
+.section-wrapper {
+    position: relative;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(30px);
+    animation: fadeIn 1s ease-out forwards;
+  }
+  
+  .section-wrapper:nth-child(even) {
+    background: linear-gradient(to right, #e0eafc, #cfdef3); /* Subtle gradient for alternating sections */
+  }
+  
+  .section-wrapper:nth-child(odd) {
+    background: linear-gradient(to right, #fdfcfb, #e2d1c3); /* Alternate gradient */
+  }
+  
+  /* Keyframes for fade-in effect */
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+/*   
+  #about {
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    color: white;
+  } */

@@ -1,0 +1,18 @@
+.footer {
+    background: linear-gradient(to right, #333, #555); /* Subtle gradient */
+    border-top: 2px solid #444; /* Light border on top */
+  }
+  
+  .footer p {
+    margin: 0;
+    font-size: 0.9rem; /* Slightly smaller text for copyright */
+  }
+  
+  .footer-links a {
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .footer-links a:hover {
+    color: #007bff; /* Highlight color on hover */
+  }
+  

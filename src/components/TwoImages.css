@@ -1,0 +1,33 @@
+.two-images-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between the images */
+    padding: 20px;
+  }
+  
+  .image-wrapper {
+    overflow: hidden;
+    border-radius: 10px; /* Rounded corners for the images */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .responsive-image {
+    width: 100%; /* Make the images responsive */
+    height: auto;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .image-wrapper:hover {
+    transform: scale(1.05); /* Slightly enlarge the image on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  @media (max-width: 768px) {
+    .two-images-container {
+      flex-direction: column; /* Stack images vertically on smaller screens */
+      gap: 15px;
+    }
+  }
+  
